@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ball_Movem.cs" />
     <Compile Include="Assets\Scripts\brick.cs" />
+    <Compile Include="Assets\Scripts\char_behavior.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/unity/Week_1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

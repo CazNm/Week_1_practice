@@ -28,7 +28,6 @@ public class Ball_Movem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        
+      
     }
 }

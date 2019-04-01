@@ -12,7 +12,9 @@ public class brick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       this_positoin.position = GetComponent<Transform>().position;
+
+        this_positoin = GetComponent<Transform>();
+        this_positoin.position = GetComponent<Transform>().position;
         
     }
 

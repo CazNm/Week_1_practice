@@ -292,7 +292,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -464,13 +464,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &939574976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bb42fd71b5a09409784f4d9853634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stat_velocity: {x: 10, y: 0}
+  stat_velocity: {x: 5, y: 0}
+  check_velocity: {x: 0, y: 0}
   run: 0
 --- !u!1 &983852848
 GameObject:

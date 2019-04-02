@@ -312,9 +312,9 @@ GameObject:
   - component: {fileID: 939574972}
   - component: {fileID: 939574971}
   - component: {fileID: 939574974}
+  - component: {fileID: 939574977}
   - component: {fileID: 939574975}
   - component: {fileID: 939574976}
-  - component: {fileID: 939574977}
   m_Layer: 0
   m_Name: simple_man
   m_TagString: Untagged
@@ -465,9 +465,12 @@ MonoBehaviour:
   stat_velocity: {x: 5, y: 0}
   check_velocity: {x: 0, y: 0}
   player_pos: {x: 0, y: 0}
+  player_data: {x: 0, y: 0, z: 0}
   run: 0
   no_ground: 0
+  jump_r: 200
   movespeed: 150
+  jump: 0
 --- !u!61 &939574977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -481,7 +484,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.034991875, y: -0.36741436}
+  m_Offset: {x: -0.034991875, y: -0.272155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -492,7 +495,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16407824, y: 0.2830503}
+  m_Size: {x: 0.16407824, y: 0.041416854}
   m_EdgeRadius: 0
 --- !u!1 &983852848
 GameObject:

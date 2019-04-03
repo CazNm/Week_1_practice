@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{05F9C3D1-DFFD-F13D-EFDC-84CC2533CDAC}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/char_behavior.cs">
     <Files>
-      <File FileName="Assets/Scripts/char_behavior.cs" Line="80" Column="64" />
+      <File FileName="Assets/Scripts/char_behavior.cs" Line="36" Column="9" />
       <File FileName="Assets/Scripts/brick.cs" Line="8" Column="14" />
     </Files>
     <Pads>

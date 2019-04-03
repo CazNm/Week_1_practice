@@ -300,6 +300,6 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets/Scripts/Ball_Movem.cs"
-"Assets/Scripts/brick.cs"
-"Assets/Scripts/char_behavior.cs"
+"Assets/Week1_comp/Scripts/Ball_Movem.cs"
+"Assets/Week1_comp/Scripts/brick.cs"
+"Assets/Week1_comp/Scripts/char_behavior.cs"

@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{05F9C3D1-DFFD-F13D-EFDC-84CC2533CDAC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/char_behavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Documents/char_behavior.cs">
     <Files>
-      <File FileName="Assets/Scripts/char_behavior.cs" Line="36" Column="9" />
+      <File FileName="../../Documents/char_behavior.cs" Line="58" Column="37" />
       <File FileName="Assets/Scripts/brick.cs" Line="8" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Week_1_practice" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="char_behavior.cs" selected="True" />
-              </Node>
-            </Node>
+            <Node name="Assets" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Week_1_practice" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

@@ -2,22 +2,23 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="../../Documents/char_behavior.cs">
     <Files>
       <File FileName="../../Documents/char_behavior.cs" Line="58" Column="37" />
-      <File FileName="Assets/Scripts/brick.cs" Line="8" Column="14" />
+      <File FileName="Assets/Week1_comp/Scripts/drop_brick.cs" Line="25" Column="23" />
+      <File FileName="Assets/Week1_comp/Scripts/brick_behavior.cs" Line="28" Column="26" />
+      <File FileName="Assets/Week1_comp/Scripts/brick.cs" Line="37" Column="27" />
+      <File FileName="Assets/Week1_comp/Scripts/char_behavior.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Week_1_practice" expanded="True">
-            <Node name="Assets" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Week1_comp" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="char_behavior.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Week_1_practice" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

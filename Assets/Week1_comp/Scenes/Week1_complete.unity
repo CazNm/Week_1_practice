@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 510045124}
   - component: {fileID: 510045123}
   - component: {fileID: 510045121}
+  - component: {fileID: 510045122}
   m_Layer: 0
   m_Name: Brick (1)
   m_TagString: Untagged
@@ -156,6 +157,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6335769, y: 1.1187947}
   m_EdgeRadius: 0
+--- !u!114 &510045122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510045120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b95fe7238664b34e8666be12e2ec928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brick_health: 0
 --- !u!212 &510045123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -508,6 +522,7 @@ GameObject:
   - component: {fileID: 983852852}
   - component: {fileID: 983852851}
   - component: {fileID: 983852849}
+  - component: {fileID: 983852850}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -541,6 +556,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6335769, y: 1.1187947}
   m_EdgeRadius: 0
+--- !u!114 &983852850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983852848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b95fe7238664b34e8666be12e2ec928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brick_health: 0
 --- !u!212 &983852851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -614,6 +642,7 @@ GameObject:
   - component: {fileID: 1607764328}
   - component: {fileID: 1607764327}
   - component: {fileID: 1607764325}
+  - component: {fileID: 1607764326}
   m_Layer: 0
   m_Name: Brick (2)
   m_TagString: Untagged
@@ -647,6 +676,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6335769, y: 1.1187947}
   m_EdgeRadius: 0
+--- !u!114 &1607764326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607764324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b95fe7238664b34e8666be12e2ec928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brick_health: 0
 --- !u!212 &1607764327
 SpriteRenderer:
   m_ObjectHideFlags: 0

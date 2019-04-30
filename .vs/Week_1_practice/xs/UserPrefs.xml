@@ -1,20 +1,25 @@
 ﻿<Properties StartupConfiguration="{05F9C3D1-DFFD-F13D-EFDC-84CC2533CDAC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Documents/char_behavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Week1_comp/Scripts/hp_manager.cs">
     <Files>
-      <File FileName="../../Documents/char_behavior.cs" Line="58" Column="37" />
-      <File FileName="Assets/Week1_comp/Scripts/drop_brick.cs" Line="25" Column="23" />
+      <File FileName="Assets/Week1_comp/Scripts/drop_brick.cs" Line="32" Column="6" />
       <File FileName="Assets/Week1_comp/Scripts/brick_behavior.cs" Line="28" Column="26" />
-      <File FileName="Assets/Week1_comp/Scripts/brick.cs" Line="37" Column="27" />
-      <File FileName="Assets/Week1_comp/Scripts/char_behavior.cs" Line="1" Column="1" />
+      <File FileName="Assets/Week1_comp/Scripts/brick.cs" Line="9" Column="1" />
+      <File FileName="Assets/Week1_comp/Scripts/char_behavior.cs" Line="114" Column="159" />
+      <File FileName="Assets/Week1_comp/Scripts/hp_manager.cs" Line="38" Column="25" />
+      <File FileName="Assets/Week1_comp/Scripts/hp_stack.cs" Line="20" Column="1" />
+      <File FileName="Assets/Week1_comp/Scripts/Button_test.cs" Line="16" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Week_1_practice" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="prac" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
               <Node name="Week1_comp" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="char_behavior.cs" selected="True" />
+                  <Node name="hp_manager.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -25,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6e16f0a5-f982-4183-98c8-15c04b9d9209" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

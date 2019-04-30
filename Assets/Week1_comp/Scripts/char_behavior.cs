@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class char_behavior : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class char_behavior : MonoBehaviour
     public float movespeed;     // 마찬가지로 물리엔진을 사용하지 않을 때 속도 데이터를 지정하기 위한 데이터이다
     public int jump = 0;        // 현재 점프키가 눌렸는지를 판단하는 정수로 여러번 점프키가 눌리지 않도록 방지하기 위한 값이다
 
-    bool reverse = false;       // 애니메이션에서 현재 캐릭터가 보고있는 방향이 어디인지를 판단하는 데이터이다 True면 왼쪽을 본다
+    bool reverse = false;
+    public int health = 110;      // 애니메이션에서 현재 캐릭터가 보고있는 방향이 어디인지를 판단하는 데이터이다 True면 왼쪽을 본다
     int x_way = 1;              // 속도값을 계산할 때 방향에 따라 달라지기에 설정한 값이다 캐릭터가 보고있는 방향 또한 판단하는데 사용할 수 있다
     Rigidbody2D player_rig;     // 편하게 RigidBody2D를 사용하기 위해 미리 선언한 데이터
     Transform pl_trans;         // 마찬가지식의 데이터
@@ -27,7 +29,7 @@ public class char_behavior : MonoBehaviour
         player_rig = GetComponent<Rigidbody2D>(); //선언한 데이터들에게 시작 시에 값을 할당한다
         char_ani = GetComponent<Animator>();
         pl_trans = GetComponent<Transform>();
-
+        health = 110;
         char_ani.SetBool("run", false); //처음부터 바로 달리는 애니메이션이 활성화 되면 안되기에 미리 제어한다
 
 
@@ -39,7 +41,8 @@ public class char_behavior : MonoBehaviour
         player_pos = new Vector2(pl_trans.position.x, pl_trans.position.y); // 매 프레임별로 현재 플레이어의 위치를 반환한다
         check_velocity = player_rig.velocity; // 현재 캐릭터의 방향 속도 데이터를 받아온다 밑에서의 속도 범위를 시각적으로 제어할 수 있도록 해준다
         onMovemnet(); //키 입력과 같은 게임 내에 전달되는 값은 즉각 적으로 반응해야되기 때문에 한번 프레임에 바로 인식할 수 있도록 update함수에 넣어준다
-                      //Fixedupdate에 넣어도 상관은 없지만 프레임이 고정되어 있기 때문에 중복 입력되는 오류를 초래할 수 있다
+        GameObject.Find("hp_manager").SendMessage("Health", health);              //Fixedupdate에 넣어도 상관은 없지만 프레임이 고정되어 있기 때문에 중복 입력되는 오류를 초래할 수 있다
+        fallen();
     }
 
 
@@ -67,7 +70,6 @@ public class char_behavior : MonoBehaviour
             //player_rig.MovePosition(Vector2.zero);
 
         }
-
         else
         {
             char_ani.SetBool("run", false);
@@ -108,7 +110,10 @@ public class char_behavior : MonoBehaviour
         no_ground = 1; // there is ground under the character
     }
 
-
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("bricks")) { health -= 10; Destroy(col.gameObject); GameObject.Find("hp_manager").SendMessage("onDamage", health / 10); }
+    }
     // 이 메소드는 키입력을 받아주는 메소드이다. 
     void onMovemnet() 
     {
@@ -156,4 +161,11 @@ public class char_behavior : MonoBehaviour
             }
         }
     }
+
+    void fallen()
+    {
+        Vector3 check_pos= Camera.main.WorldToScreenPoint(pl_trans.transform.position);
+        if (check_pos.y < 0.0f) SceneManager.LoadScene("End");
+    }
+
 }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - bricks
+  - hp_stack
   layers:
   - Default
   - TransparentFX

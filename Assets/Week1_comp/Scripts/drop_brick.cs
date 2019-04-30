@@ -31,12 +31,6 @@ public class drop_brick : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {  
-    
-    }
-
     private void FixedUpdate()
     {
         ran_posX = Random.Range(0.0f, 1920.0f);

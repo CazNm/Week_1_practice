@@ -6,8 +6,6 @@ public class brick : MonoBehaviour
 {
     public int brick_health;
     Transform this_positoin;
-    
-    
 
     // Start is called before the first frame update
     void Start()
@@ -15,18 +13,6 @@ public class brick : MonoBehaviour
 
         this_positoin = GetComponent<Transform>();
         this_positoin.position = GetComponent<Transform>().position;
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    void FixedUpdate()
-    {
         
     }
 

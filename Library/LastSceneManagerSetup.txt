@@ -2,3 +2,4 @@ sceneSetups:
 - path: Assets/Week1_comp/Scenes/Start_Scene.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0

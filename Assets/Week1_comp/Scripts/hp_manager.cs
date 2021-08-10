@@ -23,6 +23,10 @@ public class hp_manager : MonoBehaviour
             hp_bar[x] = hp_cont;
             GameObject some = GameObject.Find("hp_manager");
             hp_cont.GetComponent<Transform>().SetParent(some.transform);
+
+            var getRectPosition = hp_cont.GetComponent<RectTransform>();
+            hp_cont.GetComponent<RectTransform>().anchoredPosition = new Vector2(50 + (40.0f * x), -50);
+
             }
     }
 
